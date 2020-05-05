@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>我重新开始学习c++的历程 | LoeiJe | 何以解忧？唯有暴富</title>
+
+  
+  <meta name="author" content="LoeiJe">
+  
+
+  
+  <meta name="description" content="悔不当初">
+  
+
+  
+  
+  <meta name="keywords" content="学习">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="我重新开始学习c++的历程"/>
+
+  <meta property="og:site_name" content="LoeiJe"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="LoeiJe" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+  <!--latex-->>
+  <link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">LoeiJe</a>
+      <!--一言API-->
+      <style>
+        .top{
+          margin-top: 80px;
+        }
+      </style>
+      <p id="hitokoto" class="top">:D 获取中...</p>
+      <!-- 以下写法，选取一种即可 -->
+      
+      <!-- 现代写法，推荐 -->
+      <!-- 兼容低版本浏览器 (包括 IE)，可移除 -->
+      <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+      <!--End-->
+      <script>
+        fetch('https://v1.hitokoto.cn/?c=f&?c=a&?c=d')
+          .then(function (res) {
+            return res.json();
+          })
+          .then(function (data) {
+            var hitokoto = document.getElementById('hitokoto');
+            hitokoto.innerText = data.hitokoto;
+          })
+          .catch(function (err) {
+            console.error(err);
+          })
+      </script>
+      <!--end loei je-->
+
+    </h1>
+    <p class="site-description">何以解忧？唯有暴富</p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+    </ul>
+  </nav>
+</header>
+
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>我重新开始学习c++的历程</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2017/04/22/我重新开始学习c-的历程/" rel="bookmark">
+        <time class="entry-date published" datetime="2017-04-22T02:43:43.000Z">
+          2017-04-22
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>悔不当初</p>
+<a id="more"></a>
+<p>题目没有错，我要重新开始学习c++，更确切的是开始学习c++，因为，我现在感觉我没有点的关于c++的知识，自己更是写不出一个完整程序来，到现在会做的程序就一个a+b。好吧，就到这，自己下决心的事情也不是一个两个了，不过都是没啥好结果，我先不管这一次的事情会不会有结果，我想用这一篇博文记录一些我学习c++的历程。我现在大二，c++是我大一时的基础课，不过很遗憾。那个时候学的是谭浩强的《c++程序设计第二版》。这一次我学习的是《c++ Primer Plus 第五版》作者是Stephen prata。我不知道怎么去学计算机的知识，因为感觉这些技术很庞大，主要是感觉很难得样子。不过要平心静气，努力学习了！<br>编程练习：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br></pre></td><td class="code"><pre><span class="line">2.7.2</span><br><span class="line">&#x2F;&#x2F;距离单位：浪转换为码（一浪等于220码）</span><br><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">void change(int a);</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    int lang;</span><br><span class="line">    cin &gt;&gt; lang;</span><br><span class="line">    change(lang);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void change(int a)</span><br><span class="line">&#123;</span><br><span class="line">    cout &lt;&lt; 220 * a &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">2.7.3</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">void putout1()</span><br><span class="line">&#123;</span><br><span class="line">    cout &lt;&lt; &quot;there blind mice&quot; &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void putout2()</span><br><span class="line">&#123;</span><br><span class="line">    cout &lt;&lt; &quot;see how they run&quot; &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    putout1();</span><br><span class="line">    putout1();</span><br><span class="line">    putout2();</span><br><span class="line">    putout2();</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line">2.7.4</span><br><span class="line">&#x2F;&#x2F;温度转换：摄氏转换为华氏（华氏温度&#x3D;1.8*摄氏+32.0）</span><br><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int t(float a)</span><br><span class="line">&#123;</span><br><span class="line">    a&#x3D; a*1.8 + 32.0;</span><br><span class="line">    return a;</span><br><span class="line">&#125;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    int c;</span><br><span class="line">    cout &lt;&lt; &quot;Please enter a celsius value: &quot;;</span><br><span class="line">    cin &gt;&gt; c;</span><br><span class="line">    cout &lt;&lt; c &lt;&lt; &quot; degrees calsius is &quot; &lt;&lt; t(c) &lt;&lt; &quot; degrees fahrenheit&quot; &lt;&lt; endl;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line">2.7.5</span><br><span class="line">&#x2F;&#x2F;单位转换：光年转换为天文单位（一光年&#x3D;63240天文单位）</span><br><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">double year(double a)</span><br><span class="line">&#123;</span><br><span class="line">    a &#x3D; 63240 * a;</span><br><span class="line">    return a;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    double y;</span><br><span class="line">    cout &lt;&lt; &quot;enter...years: &quot;;</span><br><span class="line">    cin &gt;&gt; y;</span><br><span class="line">    cout &lt;&lt; y &lt;&lt; &quot; light years &#x3D; &quot; &lt;&lt; year(y) &lt;&lt; &quot; ...units.&quot;;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line">2.7.6</span><br><span class="line">&#x2F;&#x2F;时间显示</span><br><span class="line">#include&lt;iostream&gt;;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">void time(int a, int b)</span><br><span class="line">&#123;</span><br><span class="line">    cout &lt;&lt; a &lt;&lt; &quot;: &quot; &lt;&lt; b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    int a, b;</span><br><span class="line">    cout &lt;&lt; &quot;enter...hours: &quot;;</span><br><span class="line">    cin &gt;&gt; a;</span><br><span class="line">    cout &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; &quot;enter...minutes: &quot;;</span><br><span class="line">    cin &gt;&gt; b;</span><br><span class="line">    time(a, b);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line">3.7.1</span><br><span class="line">&#x2F;&#x2F;单位转换：英寸转换为几英尺几英寸</span><br><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">void change(int a);</span><br><span class="line"></span><br><span class="line">const int z &#x3D; 12;                                     &#x2F;&#x2F;转换因子</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    int a;                                            &#x2F;&#x2F;身高</span><br><span class="line">    cout &lt;&lt; &quot;please...tall:_____\b\b\b\b\b&quot;;</span><br><span class="line">    cin &gt;&gt; a;</span><br><span class="line">    change(a);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void change(int a)                                   &#x2F;&#x2F;转换函数</span><br><span class="line">&#123;</span><br><span class="line">    cout &lt;&lt; &quot;tall: &quot; &lt;&lt; a&#x2F;z &lt;&lt; &quot; yingchi &quot; &lt;&lt; a%z &lt;&lt; &quot; yingcun&quot;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">3.7.2</span><br><span class="line">注：这个代码是错误的，不过能力有限改不过了，暂且放着吧。</span><br><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">const double z &#x3D; 12;</span><br><span class="line">const double x &#x3D; 0.0254;</span><br><span class="line">const double  y &#x3D; 2.2;</span><br><span class="line"></span><br><span class="line">double change1(double a, double b);</span><br><span class="line">double change2(double a);</span><br><span class="line">void bmi(double m, double i);</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    double a, b, c; </span><br><span class="line">    cin &gt;&gt; a;</span><br><span class="line">    cin &gt;&gt; b;</span><br><span class="line">    cin &gt;&gt; c;</span><br><span class="line">    double mi &#x3D; change1(a, b);</span><br><span class="line">    double kg &#x3D; change2(a);</span><br><span class="line">    bmi(kg , mi);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">double change1(double a, double b)</span><br><span class="line">&#123;</span><br><span class="line">    double c;</span><br><span class="line">    c &#x3D; (a*z+b)*x;</span><br><span class="line">    return c;</span><br><span class="line">&#125;</span><br><span class="line">double change2(double a)</span><br><span class="line">&#123;</span><br><span class="line">    double c;</span><br><span class="line">    c &#x3D; a &#x2F; y;</span><br><span class="line">    return c;</span><br><span class="line">&#125;</span><br><span class="line">void bmi(double m, double i)</span><br><span class="line">&#123;</span><br><span class="line">    m &#x3D; m &#x2F;( i*i);</span><br><span class="line">    cout &lt;&lt; m;</span><br><span class="line">&#125;</span><br><span class="line">3.7.2副</span><br><span class="line">注：这个是正确的。</span><br><span class="line">&#x2F;&#x2F;BMI计算：体重（千克）除以身高（米）的平方</span><br><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">const double x &#x3D; 12;</span><br><span class="line">const double y &#x3D; 0.0254;</span><br><span class="line">const double z &#x3D; 2.2;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    double talli, tallun, weight;</span><br><span class="line">    double bmi;</span><br><span class="line">    cin &gt;&gt; talli &gt;&gt; tallun &gt;&gt; weight;</span><br><span class="line">    bmi &#x3D; (weight &#x2F; z) &#x2F; (((talli*x + tallun)*y)*((talli*x + tallun)*y));</span><br><span class="line">    cout &lt;&lt; bmi;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>–写于2017/4/22</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+      
+
+    <span class="post-categories">
+      <i class="icon-categories"></i>
+        <a href="/categories/学习/">学习</a>, <a href="/categories/学习/C-PrimerPlus（第五版）/">C++PrimerPlus（第五版）</a>
+    </span>
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/学习/">学习</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+  
+
+
+
+
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2020 LoeiJe
+    
+  </p>
+</footer>
+    
+  </div>
+</div>
+
+<!--鼠标点击事件-->
+<script>
+  !function (e, t, a) {
+    function r() {
+      for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y-- , s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");
+      requestAnimationFrame(r)
+    }
+    function n() {
+      var t = "function" == typeof e.onclick && e.onclick;
+      e.onclick = function (e) {
+        t && t(),
+          o(e)
+      }
+    }
+    function o(e) {
+      var a = t.createElement("div");
+      a.className = "heart",
+        s.push({
+          el: a,
+          x: e.clientX - 5,
+          y: e.clientY - 5,
+          scale: 1,
+          alpha: 1,
+          color: c()
+        }),
+        t.body.appendChild(a)
+    }
+    function i(e) {
+      var a = t.createElement("style");
+      a.type = "text/css";
+      try {
+        a.appendChild(t.createTextNode(e))
+      } catch (t) {
+        a.styleSheet.cssText = e
+      }
+      t.getElementsByTagName("head")[0].appendChild(a)
+    }
+    function c() {
+      return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
+    }
+    var s = [];
+    e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame ||
+      function (e) {
+        setTimeout(e, 1e3 / 60)
+      },
+      i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"),
+      n(),
+      r()
+  }(window, document);
+</script>
+<!--loei je-->
+<!--移开网页时，title改变-->
+<script>
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState == 'hidden') {
+      normal_title = document.title;
+      document.title = '客官，不要走...';
+    } else document.title = normal_title;
+  });
+</script>
+<!--loei je-->
+
+
+</body>
+</html>
